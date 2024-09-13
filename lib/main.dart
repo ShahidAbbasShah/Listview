@@ -9,32 +9,39 @@ class MyApp extends StatelessWidget {
   @override
   var arrayData=[
     {
-
+      'image':'Asset/hoodie.png',
       'name':'Shahid',
       'occupation':'flutter developer',
       'number':'0344-9999',
     },
     {
-      'name':'Ibrahim',
+    'image':'Asset/hoodie.png',
+      
+    'name':'Ibrahim',
       'occupation':'junior flutter developer',
       'number':'0345-9999',
     },
     {
+    'image':'Asset/hoodie.png',
+      
       'name':'Mohammad',
       'occupation':'senior flutter developer',
       'number':'0344-8888',
     },
     {
+      'image':'Asset/hoodie.png',
       'name':'Rizwan',
       'occupation':'Web developer',
       'number':'0344-7777',
     },
     {
+      'image':'Asset/hoodie.png',
       'name':'Ammar',
       'occupation':'Website developer',
       'number':'0336-9999',
     },
     {
+      'image':'Asset/hoodie.png',
       'name':'Hamza',
       'occupation':'full stack web developer',
       'number':'03434-3943',
@@ -70,8 +77,9 @@ class MyApp extends StatelessWidget {
                         )),
                         trailing: CircleAvatar(
                           radius: 35,
-                          backgroundImage: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlHPCQDGxzqlFNGeeP1WPx_5tLK03EMXLwpA&s"),
-                        ),
+                          backgroundImage: AssetImage(value['image'].toString()),
+                          
+                                                ),
                       ),
                     ),
                   ),
